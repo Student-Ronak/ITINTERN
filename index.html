@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login register contact form</title>
+    <link rel="shortcut icon " href="img/logo.jpg" type="image/svg+xml">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="container">
+        <img src="img/logo2.png" alt="" width="200" height="80" align="left">
+        <div class="login-Register">
+            <div class="nav-Buttons">
+                <button id="LoginButton" class="active">Login</button>
+                <button id="RegisterButton">Register</button>
+                <button id="ContactButton">Contact</button>
+            </div>
+            <div class="form-Group">
+                <form action="" id="login-form">
+                    <label for="username">username</label>
+                    <input type="text" id="username">
+                    <label for="password">password</label>
+                    <input type="text" id="password">
+                    <input type="submit" value="submit" class="submit">
+                </form>
+                <form action="" id="register-form">
+                    <label for="fullname">fullname</label>
+                    <input type="text" id="fullname">
+                    <label for="email">email</label>
+                    <input type="text" name="" id="email">
+                    <label for="password">password</label>
+                    <input type="text" name="" id="password">
+                    <label for="confirmpassword">confirmpassword</label>
+                    <input type="text" name="" id="confirmpassword">
+                    <input type="submit" value="submit" class="submit">
+                </form>
+                <form action="" id="contact-form">
+                    <p class="blink"><a href="index2.html"><img src="img/click.jpg" alt="" srcset=""></a></p>
+                </form>
+            </div>
+            <div id="forget">
+                <a href="">forgetPassword?</a>
+            </div>
+        </div>
+    </div>
+    <script>
+        var elLoginButton = document.getElementById("LoginButton");
+        var elRegisterButton = document.getElementById("RegisterButton");
+        var elContactButton = document.getElementById("ContactButton");
+        var elloginform = document.getElementById("login-form");
+        var elregisterform = document.getElementById("register-form");
+        var elcontactform = document.getElementById("contact-form");
+        var elforget = document.getElementById("forget");
+
+
+        elRegisterButton.onclick = function () {
+            elregisterform.style.left = "0px";
+            elregisterform.style.opacity = '1';
+            elloginform.style.left = '-500px';
+            elloginform.style.opacity = '0';
+            elforget.style.left = '-500px';
+            elforget.style.opacity = '0';
+            elRegisterButton.classList.add('active');
+            elLoginButton.classList.remove('active');
+
+
+
+
+        }
+        elLoginButton.onclick = function () {
+
+            elloginform.style.left = '0px';
+            elloginform.style.opacity = '1';
+            elforget.style.left = '-0px';
+            elforget.style.opacity = '1';
+            elregisterform.style = "500px";
+            elLoginButton.classList.add('active');
+
+            elRegisterButton.classList.remove('active');
+            elregisterform.style.opacity = '0';
+
+        }
+        elContactButton.onclick = function () {
+            elcontactform.style.left = '0px';
+            elcontactform.style.opacity = '1';
+            elloginform.style.left = '-500px';
+            elloginform.style.opacity = '0';
+
+            elregisterform.style.left = "0px";
+
+            elregisterform.style.opacity = "0px";
+
+            elContactButton.classList.add('active')
+
+            elLoginButton.classList.remove('active');
+
+            elRegisterButton.classList.remove('active');
+        }
+
+
+
+
+
+    </script>
+</body>
+
+</html>

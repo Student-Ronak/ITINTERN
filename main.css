@@ -1,0 +1,145 @@
+html,
+body,
+body * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: inherit;
+    background-color: inherit;
+    font-family: sans-serif;
+}
+
+  body{
+    background-image: url("img/background1.gif");
+    background-size: cover;
+    background-position: center center;
+}  
+img {
+    width: 200px;
+    height: 80px;
+    margin-left: 30px;
+
+}
+
+.blink {
+    animation: blinker 1.5 linear;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+
+.container {
+    width: 80%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.login-Register {
+    height: 560px;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 2em;
+    border-radius: 5px;
+    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    background: linear-gradient(180deg, rgb(65, 4, 119, 1) 0%, rgb(43, 69, 215) 58%, rgb(225, 225, 225, 0.14087654) 82%);
+    color: #ffffff
+}
+
+.nav-Buttons {
+    width: 100%;
+    height: 100px;
+    padding-top: 40px;
+    opacity: 1;
+    margin-bottom: 3rem;
+}
+
+button {
+    font-size: 1.52em;
+    margin-right: 1em;
+    border: 0;
+    cursor: pointer;
+}
+
+button:focus {
+    outline: 0;
+}
+
+button.active {
+    padding-bottom: 10px;
+    border-bottom: solid 2px rgba(78, 59, 225, 0.267);
+}
+
+#forget {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    height: 100px;
+    padding-top: 10px;
+    margin-top: -310px;
+    border-top: 2px solid rgb(225, 225, 225, 0.1);
+    color: white;
+}
+
+.form-Group input {
+    width: 100%;
+    height: 35px;
+    padding-left: 20px;
+    bottom: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background-color: rgb(225, 225, 225, 0.1);
+}
+
+.form-Group label {
+    text-transform: uppercase;
+}
+
+input.submit {
+    width: 100%;
+    height: 35px;
+
+    bottom: none;
+    border-radius: 20px;
+    margin-top: 23px;
+    background-color: rgba(28, 153, 153, 0.1);
+    padding: 8px 0;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    text-align: center;
+    color: rgb(225, 225, 225, 1);
+}
+
+form,
+#forget {
+    transition: all .5s ease;
+    position: relative;
+}
+
+#LoginButton,
+#RegisterButton,
+#ContactButton {
+    transition: all .5s ease;
+}
+
+form#login-form {
+    left: 0;
+}
+
+form#register-form {
+    left: 500px;
+    top: -230px;
+    opacity: 0;;
+}
+
+form#contact-form {
+    left: 400px;
+    top:  -500px; 
+    opacity: 0;;
+}
